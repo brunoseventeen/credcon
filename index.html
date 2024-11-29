@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbcom | Neutralizando o Futuro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Header */
+        header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./img/background_img.jpeg'); /* Substitua pela sua imagem */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Serviços */
+        .servico-card {
+            background: linear-gradient(135deg, #f0f0f0, #ffffff);
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .servico-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .servico-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Sobre Nós */
+        .sobre-texto {
+            font-size: 1.2rem;
+            color: #555;
+            background-color: #f7f7f7;
+            line-height: 1.8;
+        }
+        #sobre-nos {
+            background-color: #f7f7f7;
+        }
+
+        /* Depoimentos */
+        .carousel-item p {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #444;
+        }
+
+        .carousel-item .author {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .text-primary {
+            color: #105208;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Bem-vindo à CARBCON</h1>
+            <p>"Neutralizando o carbono do presente e conservando o futuro consciente"</p>
+        </div>
+    </header>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-green">NOSSOS SERVIÇOS</h2>
+            <div class="row g-4">
+                <!-- Plataforma Colaborativa -->
+                <div class="col-md-4">
+                    <div class="servico-card text-center">
+                        <i class="bi bi-people-fill icon-green servico-icon" style="font-size: 3rem;"></i> <!-- Novo ícone -->
+                        <h4 class="mt-3">Plataforma Colaborativa</h4>
+                        <p>Um ambiente digital que conecta pequenos e médios produtores rurais a compradores de créditos de carbono. Funciona como uma rede de projetos menores em iniciativas compartilhadas, cooperativa virtual, permitindo a integração de reduzindo custos e ampliando o acesso ao mercado de carbono.</p>
+                    </div>
+                </div>
+    
+                <!-- Certificação -->
+                <div class="col-md-4">
+                    <div class="servico-card text-center">
+                        <i class="bi bi-check-circle-fill icon-green servico-icon" style="font-size: 3rem;"></i> <!-- Novo ícone -->
+                        <h4 class="mt-3">Certificação</h4>
+                        <p>Oferecemos um processo ágil e acessível de certificação de projetos de carbono utilizando tecnologia blockchain. Garantimos transparência, segurança e a validação de projetos, viabilizando a entrada dos produtores no mercado com menores barreiras financeiras.</p>
+                    </div>
+                </div>
+    
+                <!-- Comercialização -->
+                <div class="col-md-4">
+                    <div class="servico-card text-center">
+                        <i class="bi bi-currency-dollar icon-green servico-icon" style="font-size: 3rem;"></i> <!-- Novo ícone -->
+                        <h4 class="mt-3">Comercialização</h4>
+                        <p>Facilitamos a negociação de créditos de carbono entre produtores e investidores. Por meio da plataforma, criamos um canal confiável e eficiente para a venda direta, maximizando o retorno financeiro para os produtores e o impacto ambiental positivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom CSS -->
+    <style>
+        .icon-green {
+            color: #105208; /* Cor verde */
+        }
+    
+        .text-green {
+            color: #105208; /* Cor verde para o título */
+        }
+    
+        .servico-icon {
+            margin-bottom: 1rem;
+        }
+    </style>
+    
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">SOBRE NÓS</h2>
+                    <p class="sobre-texto">
+                        A Carbcom é uma empresa comprometida com a sustentabilidade, oferecendo soluções inovadoras para empresas e produtores rurais. 
+                        Nosso objetivo é criar um impacto positivo no meio ambiente e ajudar nossos parceiros a neutralizar suas emissões de carbono.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/img/imgdff.jpeg" alt="Sobre nós" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="diferenciais" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-green">NOSSOS DIFERENCIAIS</h2>
+            <div class="row text-center">
+                <!-- Primeiro ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-cash-stack icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Certificação Compartilhada</h5>
+                    <p>Por região/estado.</p>
+                </div>
+                <!-- Segundo ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-people-fill icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Apoio Técnico</h5>
+                    <p>Compartilhado.</p>
+                </div>
+                <!-- Terceiro ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-hand-index-thumb icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Plataforma Intuitiva</h5>
+                    <p>De fácil acesso.</p>
+                </div>
+                <!-- Quarto ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-globe icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Integração</h5>
+                    <p>Com políticas públicas estaduais.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <!-- Quinto ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-diagram-3 icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Implementação</h5>
+                    <p>De blockchain.</p>
+                </div>
+                <!-- Sexto ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-graph-up icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Rede de Negócios</h5>
+                    <p>Sustentáveis.</p>
+                </div>
+                <!-- Sétimo ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-cart icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Marketplace</h5>
+                    <p>Inteligente.</p>
+                </div>
+                <!-- Oitavo ícone -->
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-currency-exchange icon-green" style="font-size: 2.5rem;"></i>
+                    <h5 class="mt-3">Precificação Dinâmica</h5>
+                    <p>Para atender às demandas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom CSS -->
+    <style>
+        .icon-green {
+            color: #105208; /* Cor verde */
+        }
+        .text-green {
+        color: #105208; /* Cor verde para o título */
+    }
+    </style>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Carbcon. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
